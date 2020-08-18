@@ -1,0 +1,95 @@
+{
+	"info": {
+		"_postman_id": "d220bde8-339c-4d76-8bc7-fba927e68a69",
+		"name": "Contatos",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json"
+	},
+	"item": [
+		{
+			"name": "autenticar",
+			"request": {
+				"method": "POST",
+				"header": [
+					{
+						"key": "Authorization",
+						"value": "Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1bmlxdWVfbmFtZSI6IlllbGxvdyIsInJvbGUiOiJtYW5hZ2VyIiwibmJmIjoxNTk3NjIzODQ3LCJleHAiOjE1OTc2MzEwNDcsImlhdCI6MTU5NzYyMzg0N30.9TmqfBCEYWHTMOQ9Al1gkHe5NsHLEUGNEq_KUOeZvTE",
+						"type": "text"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{\"username\":\"Yellow\",\"password\":\"yellow\"}  ",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "https://localhost:5001/autenticacao/login",
+					"protocol": "https",
+					"host": [
+						"localhost"
+					],
+					"port": "5001",
+					"path": [
+						"autenticacao",
+						"login"
+					],
+					"query": [
+						{
+							"key": "Authorization",
+							"value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1bmlxdWVfbmFtZSI6IlllbGxvdyIsInJvbGUiOiJtYW5hZ2VyIiwibmJmIjoxNTk3NjIzODQ3LCJleHAiOjE1OTc2MzEwNDcsImlhdCI6MTU5NzYyMzg0N30.9TmqfBCEYWHTMOQ9Al1gkHe5NsHLEUGNEq_KUOeZvTE",
+							"disabled": true
+						}
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "novo usuario",
+			"request": {
+				"method": "POST",
+				"header": [
+					{
+						"key": "Authorization",
+						"value": "Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1bmlxdWVfbmFtZSI6IlllbGxvdyIsInJvbGUiOiJtYW5hZ2VyIiwibmJmIjoxNTk3NzE5NDM4LCJleHAiOjE1OTc3MjY2MzgsImlhdCI6MTU5NzcxOTQzOH0.DjSAZJpRxKLUlaNUhfS9FjMOZZ520LyILj8uF4LNHJc",
+						"type": "text"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{\"nome\":\"Yellow12121\",\"cpf\":\"yellow\", \"email\":\"teste@teste\"}  ",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "https://localhost:5001/api/contato/novo",
+					"protocol": "https",
+					"host": [
+						"localhost"
+					],
+					"port": "5001",
+					"path": [
+						"api",
+						"contato",
+						"novo"
+					],
+					"query": [
+						{
+							"key": "Authorization",
+							"value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1bmlxdWVfbmFtZSI6IlllbGxvdyIsInJvbGUiOiJtYW5hZ2VyIiwibmJmIjoxNTk3NjIzODQ3LCJleHAiOjE1OTc2MzEwNDcsImlhdCI6MTU5NzYyMzg0N30.9TmqfBCEYWHTMOQ9Al1gkHe5NsHLEUGNEq_KUOeZvTE",
+							"disabled": true
+						}
+					]
+				}
+			},
+			"response": []
+		}
+	],
+	"protocolProfileBehavior": {}
+}
